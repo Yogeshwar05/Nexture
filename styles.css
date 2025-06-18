@@ -14,14 +14,33 @@ html {
 @keyframes fadeIn-left {
   from {
     opacity: 0;
-    transform: translateX(-20px);
+    transform: translateX(-100px);
   }
   to {
     opacity: 1;
     transform: translateX(0px);
   }
 }
-
+@keyframes fadeIn-top {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes fadeIn-right {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .animate-on-scroll{
   opacity: 0;
   transform: translateX(-200px);
@@ -32,16 +51,7 @@ html {
   animation: fadeIn-left 1s ease-out forwards;
 }
 
-@keyframes fadeIn-right {
-  from {
-    opacity: 0;
-    transform: translateX(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
+
 
 .animate-on-scroll-right {
   opacity: 0;
@@ -53,16 +63,7 @@ html {
   animation: fadeIn-right 1s ease-out forwards;
 }
 
-@keyframes fadeIn-top {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
+
 .service-box h3 {
   margin: 0 0 0.5rem;
   font-size: 1.1rem;
@@ -238,78 +239,7 @@ nav a {
 
 
 /* Responsive Navbar & Layout */
-@media (max-width: 768px) {
-  main {
-    padding-inline: 0rem;
-    width: 95vw;
-  }
-  html {
-    font-size: 16px;
-  }
 
-  .menu-icon {
-    display: block;
-  }
-
-  nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: white;
-    flex-direction: column;
-    display: none;
-    padding: 1rem 2rem;
-    gap: 1rem;
-  }
-
-  nav.show-menu {
-    display: flex;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 3rem 1.5rem;
-  }
-
-  .hero-left {
-    max-width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-  .main-heading {
-    font-size: 2.5rem;
-    /* Smaller for mobile */
-  }
-
-  .subtitle {
-    font-size: 1rem;
-  }
-
-  .book-btn {
-    font-size: 1.1rem;
-    padding: 0.75rem 1.75rem;
-  }
-
-  .hero-right {
-    display: none;
-    max-width: 100%;
-    margin-left: 0;
-    margin-top: 2rem;
-  }
-
-  .chat-img {
-    width: 30%;
-    left: 30%;
-  }
-
-  .maid-img {
-    width: 20%;
-    left: 55%;
-     bottom: -6%;
-  }
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined');
 
@@ -402,37 +332,6 @@ nav a {
   font-size: 1.2rem;
   line-height: 1.6;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  .features-container {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .feature-card {
-    max-width: 45%;
-    padding: 1rem;
-  }
-
-  .feature-card h3 {
-    font-size: 1.2rem;
-  }
-
-  .feature-card p {
-    font-size: 0.95rem;
-  }
-
-  .grid-placeholder {
-    width: 100%;
-    aspect-ratio: unset;
-    /* Allow natural resizing on mobile */
-    margin: 2rem auto 0 auto;
-  }
-}
-
-
 
 .whatsapp-container {
   display: flex;
@@ -528,47 +427,6 @@ h2 {
   line-height: 1.4;
 }
 
-/* Mobile layout */
-@media (max-width: 768px) {
-  .whatsapp-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .chat-phone{
-    display: none;
-  }
-  .whatsapp-features {
-    max-width: 100%;
-  }
-
-  .whatsapp-features {
-    margin-top: 2rem;
-    align-items: center;
-    text-align: center;
-  }
-
-  .whatsapp-features h2 {
-    font-size: 1.5rem;
-  }
-
-  .feature-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  .feature-card h3{
-    font-size: 1rem;
-  }
-  .feature-card p{
-    font-size: 0.7rem;
-  }
-}
-
-
-
-
-
 .faq-section {
   /* background-color: #fef4f0; */
   padding: 4rem 2rem;
@@ -608,22 +466,6 @@ h2 {
   color: #333;
   line-height: 1.6;
 }
-
-/* Responsive tweaks */
-@media (max-width: 600px) {
-  .faq-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .faq-question {
-    font-size: 1.1rem;
-  }
-
-  .faq-answer {
-    font-size: 0.95rem;
-  }
-}
-
 
 .book-now-section {
   background-color: #fef4f0;
@@ -694,24 +536,6 @@ h2 {
 }
 
 /* ✅ Responsive Breakpoints */
-@media (max-width: 1024px) {
-  .book-now-left h2 {
-    font-size: 2rem;
-  }
-
-  .book-now-left p {
-    font-size: 1rem;
-  }
-
-  .book-now-button {
-    padding: 0.9rem 1.8rem;
-    font-size: 0.95rem;
-  }
-}
-
-
-
-
 
 .services-section {
   display: flex;
@@ -781,17 +605,6 @@ h2 {
   font-size: 1rem;
 }
 
-/* ✅ Responsive Layout */
-@media (max-width: 768px) {
-  .services-section {
-    flex-direction: column;
-    padding: 2rem 1rem;
-  }
-
-  .grid-placeholder {
-    margin-top: 2rem;
-  }
-}
 .faq-section {
   /* background-color: #fef4f0; */
   padding: 4rem 2rem;
@@ -847,82 +660,6 @@ h2 {
 .faq-card.active {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
-
-@media (max-width: 768px) {
-  .book-now-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .book-now-left, .book-now-right {
-    width: 100%;
-  }
-  .service-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-  }
-  .service-box{
-    width: 45%;
-    height: 16.5rem;
-  }
-  .book-now-left h2 {
-    font-size: 1.8rem;
-  }
-
-  .book-now-left p {
-    font-size: 1rem;
-  }
-
-  .book-now-img {
-    max-width: 300px;
-  }
-  .services-content h2{
-    font-size: 1.5rem;
-  }
-  .service-box h3 {
-    text-align: center;
-    font-size: 1rem;
-    text-align: cen;
-  }
-  .service-box p {
-    text-align: center;
-    font-size: 0.8rem;
-    text-align: cen;
-  }
-  .line{
-    height: 2px;
-    width: 80%;
-    background-color: rgb(243, 213, 182);
-    margin: 0 auto;
-    margin-bottom: 0.4rem;
-  }
-  .feature-container-last{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
-  }
-  .feature-item {
-    height: 15rem;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  .feature-item h4 {
-    font-size: 1rem;
-  } 
-  .feature-item p {
-    font-size: 0.8rem;
-  }
-}
-
-
 
 .footer {
   background-color: #c3a1a1;
@@ -1027,12 +764,4 @@ h2 {
 
 .footer-bottom i {
   margin-right: 5px;
-}
-
-
-
-@media (max-width: 768px) {
-.footer-column1 {
-  display: none;
-}
 }

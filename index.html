@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nexture Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive_768.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
@@ -17,7 +18,7 @@
   <body>
     <header class="navbar">
       <div class="logo">
-        <img src="logoicon.png" alt="Logo" height="45px" />
+        <img src="./assets/logoicon.png" alt="Logo" height="45px" />
         Nexture
       </div>
       <nav id="nav-links">
@@ -34,13 +35,15 @@
         <h1 class="main-heading">
           Book your Home Services<br />at your Doorstep
         </h1>
-        <button class="book-btn"><a href="#book">Book Now</a></button>
-        <button class="login-btn">Login</button>
+        <div class="btn-container">
+          <button class="book-btn"><a href="#book">Book Now</a></button>
+          <button class="login-btn">Login</button>
+        </div>
     </div>
       <div class="hero-right">
-        <img src="WhatsApp_Service.png" alt="Chat App UI" class="chat-img" />
+        <img src="./assets/WhatsApp_Service.png" alt="Chat App UI" class="chat-img" />
         <img
-          src="maid-placeholder.png"
+          src="./assets/maid-placeholder.png"
           alt="Maid Illustration"
           class="maid-img"
         />
@@ -123,7 +126,7 @@ verified
               </p>
             </div>
 
-            <div class="service-box animate-on-scroll">
+            <div class="service-box animate-on-scroll-right">
               <h3>Beauty & Wellness</h3>
               <div class="line"></div>
               <p>
@@ -132,7 +135,7 @@ verified
               </p>
             </div>
 
-            <div class="service-box animate-on-scroll">
+            <div class="service-box animate-on-scroll-right">
               <h3>Specialized Services</h3>
               <div class="line"></div>
               <p>
@@ -148,9 +151,9 @@ verified
           </p>
         </div>
 
-        <div class="grid-placeholder animate-on-scroll-right">
+        <div class="grid-placeholder animate-on-scroll-top">
           <!-- <p>A grid image showing images of services providec by our company</p> -->
-          <img class="service-grid-img" src="./Services_grid.png" alt="" />
+          <img class="service-grid-img" src="./assets/Services_grid.png" alt="" />
         </div>
       </section>
 
@@ -158,7 +161,7 @@ verified
         <div class="whatsapp-container">
           <!-- Left: Square Box -->
           <div class="chat-phone animate-on-scroll">
-            <img src="./WhatsApp_Service.png" class="phone-screen" alt=" " />
+            <img src="./assets/WhatsApp_Service.png" class="phone-screen" alt=" " />
           </div>
 
           <!-- Right: WhatsApp Features -->
@@ -171,6 +174,7 @@ verified
                 <span class="icon">💬</span>
                 <div>
                   <h4>Instant Connection</h4>
+                  <div class="line"></div>
                   <p>
                     Book services directly via WhatsApp in under 60 seconds,
                     connecting you to professionals without delay.
@@ -182,6 +186,7 @@ verified
                 <span class="icon">🛠️</span>
                 <div>
                   <h4>Effortless Process</h4>
+                  <div class="line"></div>
                   <p>
                     Simply send a message, describe your needs, and get matched
                     with a qualified service provider instantly.
@@ -189,10 +194,11 @@ verified
                 </div>
               </div>
 
-              <div class="feature-item animate-on-scroll-right">
+              <div class="feature-item animate-on-scroll">
                 <span class="icon">🔔</span>
                 <div>
                   <h4>Real-time Updates</h4>
+                  <div class="line"></div>
                   <p>
                     Receive instant service confirmations and status alerts
                     directly through your chat, keeping you informed every step
@@ -201,10 +207,11 @@ verified
                 </div>
               </div>
 
-              <div class="feature-item animate-on-scroll-right">
+              <div class="feature-item animate-on-scroll">
                 <span class="icon">🔐</span>
                 <div>
                   <h4>Secure Payments</h4>
+                  <div class="line"></div>
                   <p>
                     Handle transactions securely and conveniently within
                     WhatsApp or via a trusted payment link, ensuring peace of
@@ -220,7 +227,7 @@ verified
       <section class="faq-section" id="faq">
         <h2>Frequently asked questions</h2>
 
-        <div class="faq-card">
+        <div class="faq-card animate-on-scroll">
           <div class="faq-question">1. What is a WhatsApp-based service?</div>
           <div class="faq-answer">
             Our services are managed entirely through WhatsApp—just message us,
@@ -228,7 +235,7 @@ verified
           </div>
         </div>
 
-        <div class="faq-card">
+        <div class="faq-card animate-on-scroll-right">
           <div class="faq-question">2. How can we trust your service?</div>
           <div class="faq-answer">
             We offer Cash on Delivery and dedicated customer support via call,
@@ -236,7 +243,7 @@ verified
           </div>
         </div>
 
-        <div class="faq-card">
+        <div class="faq-card animate-on-scroll">
           <div class="faq-question">
             3. Why should I choose you over other providers?
           </div>
@@ -246,7 +253,7 @@ verified
           </div>
         </div>
 
-        <div class="faq-card">
+        <div class="faq-card animate-on-scroll-right">
           <div class="faq-question">
             4. Which locations you currently serve?
           </div>
@@ -256,7 +263,7 @@ verified
           </div>
         </div>
 
-        <div class="faq-card">
+        <div class="faq-card animate-on-scroll">
           <div class="faq-question">5. How can i contact your team?</div>
           <div class="faq-answer">
             You can reach us easily through Whatsapp, phone call, or email-our
@@ -286,7 +293,7 @@ verified
             >
           </div>
           <div class="book-now-right">
-            <img src="bookservice.jpg" alt="Phone Image" class="book-now-img" />
+            <img src="./assets/bookservice.jpg" alt="Phone Image" class="book-now-img" />
           </div>
         </div>
       </section>
